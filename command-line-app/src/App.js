@@ -29,10 +29,8 @@ function App() {
   const processCommand = (command) => {
     switch (command.toLowerCase()) {
       case 'help':
-        const helpOutput = [
-          'Commands - Description', 
+        const helpOutput = [ 
           'help - Lists all commands', 
-          'commands - Lists all commands',
           'clear - Clear terminal',
           'date - Prints current date and time',
           'wiki-random - Opens a random Wikipedia article',
@@ -40,11 +38,17 @@ function App() {
           'projects - Lists Charlie\'s projects',
           'experience - Lists Charlie\'s experience',
           'education - Lists Charlie\'s education',
-          'github - Lists Charlie\'s GitHub',
-          'CV - Lists Charlie\'s CV',
+          'github - Opens Charlie\'s GitHub',
+          'resume - Opens Charlie\'s resume',
           'email - Lists Charlie\'s email'
         ];
         setTerminalHistory(th => [...th, ...helpOutput]);
+        break;
+      case 'email':
+        const emailOutput = [
+          'charlielewis2133@gmail.com'
+        ];
+        setTerminalHistory(th => [...th, ...emailOutput]);
         break;
       case 'clear':
         setTerminalHistory([]);

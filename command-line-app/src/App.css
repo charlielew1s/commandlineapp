@@ -44,7 +44,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: yellow; /* Set background color to black */
+  background-color: black; /* Set background color to black */
   color: yellow; /* Set default text color */
 }
 
