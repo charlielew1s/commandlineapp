@@ -44,8 +44,8 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #000; /* Set background color to black */
-  color: #0f0; /* Set default text color */
+  background-color: yellow; /* Set background color to black */
+  color: yellow; /* Set default text color */
 }
 
 /* Style the App component to fill the entire viewport */
@@ -81,7 +81,7 @@ html, body {
   width: 80%;
   height: 50px; /* Fixed height for input */
   background-color: #000000; /* Dark background for input */
-  color: #0f0; /* Green text color */
+  color: yellow; /* Green text color */
   border: none;
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
