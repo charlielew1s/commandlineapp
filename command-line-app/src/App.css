@@ -68,7 +68,7 @@ html, body {
 
 /* Style for the terminal output */
 .App-terminal-output {
-  width: 80%;
+  width: 110%;
   flex-grow: 1; /* Allow it to expand */
   overflow-y: auto; /* Make it scrollable */
   background-color: #020000; /* Set background color to black */

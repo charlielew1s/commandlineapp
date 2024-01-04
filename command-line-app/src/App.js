@@ -39,7 +39,7 @@ function App() {
           'experience - Lists Charlie\'s experience',
           'education - Lists Charlie\'s education',
           'github - Opens Charlie\'s GitHub',
-          'resume - Opens Charlie\'s resume',
+          'CV - Opens Charlie\'s CV',
           'email - Lists Charlie\'s email'
         ];
         setTerminalHistory(th => [...th, ...helpOutput]);
@@ -52,6 +52,20 @@ function App() {
         break;
       case 'clear':
         setTerminalHistory([]);
+        break;
+      case 'date':
+        const currentDate = new Date().toString();
+        setTerminalHistory(th => [...th, currentDate]);
+        break;
+      case 'languages':
+        const languages = [
+          'Java - Intermediate',
+          'React JavaScript - Intermediate',
+          'Python - Intermediate',
+          'SQL - Intermediate',
+          'C++ - Intermediate'
+        ];
+        setTerminalHistory(th => [...th, ...languages]); // Spread the array
         break;
       default:
         setTerminalHistory(th => [...th, `Unknown command: ${command}`]);
