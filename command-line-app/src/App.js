@@ -67,6 +67,18 @@ function App() {
         ];
         setTerminalHistory(th => [...th, ...languages]); // Spread the array
         break;
+        case 'wiki-random':
+          window.open('https://en.wikipedia.org/wiki/Special:Random', '_blank');
+          setTerminalHistory(th => [...th, 'Opening a random Wikipedia article...']);
+          break;
+        case 'cv':
+          window.open('/Charles_Lewis_Updated_CV.pdf', '_blank');
+          setTerminalHistory(th => [...th, 'Opening Charles Lewis CV...']);
+          break;
+        case 'github':
+          window.open('https://github.com/charlielew1s', '_blank');
+          setTerminalHistory(th => [...th, 'Opening GitHub page...']);
+          break;     
       default:
         setTerminalHistory(th => [...th, `Unknown command: ${command}`]);
     }
