@@ -69,11 +69,12 @@ html, body {
 /* Style for the terminal output */
 .App-terminal-output {
   width: 110%;
-  flex-grow: 1; /* Allow it to expand */
-  overflow-y: auto; /* Make it scrollable */
-  background-color: #020000; /* Set background color to black */
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #020000;
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
+  word-wrap: break-word; /* This will break long words to prevent horizontal overflow */
 }
 
 /* Style for the terminal input */
