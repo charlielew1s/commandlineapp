@@ -104,3 +104,28 @@ html, body {
   text-align: left;
 }
 
+/* ... [existing styles] ... */
+
+.top-right-links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  display: flex;
+  gap: 10px; /* Adjust the gap between the links as needed */
+}
+
+.top-right-links a {
+  color: yellow;
+  cursor: pointer;
+  font-size: 35px; /* Match the font size of the .App-name */
+  font-weight: bold; /* Optional: to match the weight of the .App-name */
+  text-decoration: underline; /* Underline the text */
+}
+
+/* ... [rest of your existing styles] ... */
+
+
+
+
+/* ... [rest of your existing styles] ... */

@@ -251,6 +251,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className="top-right-links">
+        <a href="https://github.com/charlielew1s" target="_blank" rel="noopener noreferrer">Github</a>
+        <a href="/Charles_Lewis_Updated_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+      </div>
       <header className="App-header">
         <div className="App-container">
           <p className="App-name">Charlie Lewis</p>
