@@ -90,4 +90,17 @@ html, body {
 }
 
 
+.command-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.command-table, .command-table th, .command-table td {
+  border: 1px solid #ddd;
+}
+
+.command-table th, .command-table td {
+  padding: 8px;
+  text-align: left;
+}
 

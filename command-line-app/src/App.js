@@ -29,22 +29,34 @@ function App() {
   const processCommand = (command) => {
     switch (command.toLowerCase()) {
       case 'help':
-        const helpOutput = [ 
-          'help - Lists all commands', 
-          'clear - Clear terminal',
-          'date - Prints current date and time',
-          'wiki-random - Opens a random Wikipedia article',
-          'languages - Programming languages Charlie knows',
-          'projects - Lists Charlie\'s projects',
-          'experience - Lists Charlie\'s experience',
-          'education - Lists Charlie\'s education',
-          'github - Opens Charlie\'s GitHub',
-          'CV - Opens Charlie\'s CV',
-          'email - Lists Charlie\'s email',
-          'skills - Lists Charlie\'s skills'
-        ];
-        setTerminalHistory(th => [...th, ...helpOutput]);
-        break;
+      const helpOutput = [ 
+        { command: 'help', description: 'Lists all commands' },
+        { command: 'clear', description: 'Clear terminal' },
+        { command: 'date', description: 'Prints current date and time' },
+        { command: 'wiki-random', description: 'Opens a random Wikipedia article' },
+        { command: 'languages', description: 'Programming languages Charlie knows' },
+        { command: 'projects', description: 'Lists Charlie\'s projects' },
+        { command: 'experience', description: 'Lists Charlie\'s experience' },
+        { command: 'education', description: 'Lists Charlie\'s education' },
+        { command: 'github', description: 'Opens Charlie\'s GitHub' },
+        { command: 'cv', description: 'Opens Charlie\'s CV' },
+        { command: 'email', description: 'Lists Charlie\'s email' },
+        { command: 'skills', description: 'Lists Charlie\'s skills' }
+      ];
+      const helpTable = (
+        <table className="command-table">
+          <tbody>
+            {helpOutput.map((item, index) => (
+              <tr key={index}>
+                <td>{item.command}</td>
+                <td>{item.description}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      );
+      setTerminalHistory(th => [...th, helpTable]);
+      break;
       case 'email':
         const emailOutput = [
           'charlielewis2133@gmail.com'
