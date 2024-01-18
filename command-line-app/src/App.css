@@ -1,4 +1,6 @@
-
+* {
+  font-family: 'Arial', sans-serif;
+}
 .App-container {
   position: absolute;
   top: 0;

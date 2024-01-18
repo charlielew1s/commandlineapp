@@ -29,20 +29,20 @@ function App() {
   const processCommand = (command) => {
     switch (command.toLowerCase()) {
       case 'help':
-      const helpOutput = [ 
-        { command: 'help', description: 'Lists all commands' },
-        { command: 'clear', description: 'Clear terminal' },
-        { command: 'date', description: 'Prints current date and time' },
-        { command: 'wiki-random', description: 'Opens a random Wikipedia article' },
-        { command: 'languages', description: 'Programming languages Charlie knows' },
-        { command: 'projects', description: 'Lists Charlie\'s projects' },
-        { command: 'experience', description: 'Lists Charlie\'s experience' },
-        { command: 'education', description: 'Lists Charlie\'s education' },
-        { command: 'github', description: 'Opens Charlie\'s GitHub' },
-        { command: 'cv', description: 'Opens Charlie\'s CV' },
-        { command: 'email', description: 'Lists Charlie\'s email' },
-        { command: 'skills', description: 'Lists Charlie\'s skills' }
-      ];
+        const helpOutput = [
+          { command: 'help', description: 'Lists all commands' },
+          { command: 'cv', description: 'Opens Charlie\'s CV' },
+          { command: 'experience', description: 'Lists Charlie\'s experience' },
+          { command: 'education', description: 'Lists Charlie\'s education' },
+          { command: 'skills', description: 'Lists Charlie\'s skills' },
+          { command: 'projects', description: 'Lists Charlie\'s projects' },
+          { command: 'languages', description: 'Programming languages Charlie knows' },
+          { command: 'github', description: 'Opens Charlie\'s GitHub' },
+          { command: 'email', description: 'Lists Charlie\'s email' },
+          { command: 'clear', description: 'Clear terminal' },
+          { command: 'date', description: 'Prints current date and time' },
+          { command: 'wiki-random', description: 'Opens a random Wikipedia article' }
+        ];        
       const helpTable = (
         <table className="command-table">
           <tbody>
@@ -155,12 +155,7 @@ function App() {
             're-insurance scheme in Britain, by documenting these workflows into a step by step',
             'easy to understand guide.\n' +
             'A reference may be requested by contacting my former line manager here -',
-            'francesca.terenzi@guycarp.com\n' +
-            'SCHOOL LIBRARY MONITOR (UNPAID), 09/2019 - 03/2020\n' +
-            'International Community School, London, United Kingdom\n' +
-            'I supervised other students using the library during break times to ensure',
-            'appropriate behaviour. This taught me how to take responsibility for the younger',
-            'students and develop leadership skills.'
+            'francesca.terenzi@guycarp.com\n' 
           ];
         
           const formattedExperienceOutput = experienceOutput.flatMap((item) => 
@@ -194,35 +189,10 @@ function App() {
           '• Programming in C++ - 89.1%\n' +
           'International Community School, London, United Kingdom, 08/2019 - 05/2021\n' +
           'International Baccalaureate Diploma Programme\n' +
-          'Higher Level:\n' +
-          '• Music - 6/7\n' +
-          '• History - 6/7\n' +
-          '• Language and Literature (English) - 6/7\n' +
-          'Standard Level:\n' +
-          '• Environmental Systems and Societies - 7/7\n' +
-          '• Mathematics Applications and Interpretation - 6/7\n' +
-          '• Spanish ab initio - 6/7\n' +
-          'Core Requirements:\n' +
-          '• Creativity, Activity and Service hours\n' +
-          '• Theory of Knowledge - B\n' +
-          '• Extended Essay in Environmental Systems and Societies - C\n' +
           'Total points awarded: 39/45\n' +
-          'International Community School, London, United Kingdom, 01/2015 - 06/2019\n' +
           'International Baccalaureate Middle Years Programme\n' +
           '• Mathematics - 6/7\n' +
-          '• Language and Literature (English) - 6/7\n' +
-          'Centre for Young Musicians, London, United Kingdom, 09/2011 - 05/2020\n' +
-          'Cello\n' +
-          'Had individual tutoring and played in orchestras. For many years, I played in',
-          'orchestras conducted by the world class renowned conductor and composer',
-          'Peter Ash who is best known for his opera "The Golden Ticket" based on Roald',
-          'Dahl\'s "Charlie and the Chocolate Factory" - Ash also has conducted the Royal',
-          'Philharmonic Orchestra, London Sinfonietta and many other orchestras. Ash was in',
-          '2006 awarded the Bartók Prize by the Hungarian Cultural Centre.\n' +
-          'Associated Board of the Royal Schools of Music\n' +
-          '• Grade 8 Cello - Merit\n' +
-          'Associated Board of the Royal Schools of Music\n' +
-          '• Grade 8 Piano - Pass\n' 
+          '• Language and Literature (English) - 6/7\n' 
         ];
         
         const formattedEducationOutput = educationOutput.flatMap((item) => 
