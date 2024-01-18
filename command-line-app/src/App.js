@@ -189,10 +189,7 @@ function App() {
           '• Programming in C++ - 89.1%\n' +
           'International Community School, London, United Kingdom, 08/2019 - 05/2021\n' +
           'International Baccalaureate Diploma Programme\n' +
-          'Total points awarded: 39/45\n' +
-          'International Baccalaureate Middle Years Programme\n' +
-          '• Mathematics - 6/7\n' +
-          '• Language and Literature (English) - 6/7\n' 
+          'Total points awarded: 39/45\n'
         ];
         
         const formattedEducationOutput = educationOutput.flatMap((item) => 
