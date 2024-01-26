@@ -1,4 +1,6 @@
-
+* {
+  font-family: 'Arial', sans-serif;
+}
 .App-container {
   position: absolute;
   top: 0;
@@ -24,9 +26,8 @@
 }
 
 .App-help {
-  color: yellow; /* same color as the other text elements */
-  font-size: 16px; /* adjust the font size as needed */
-  /* add any additional styling you want */
+  color: yellow; 
+  font-size: 16px; 
 }
 
 .App-terminal {
@@ -39,16 +40,16 @@
   margin-top: 20px;
 }
 
-/* Set the body and html to take up the full height of the viewport */
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: black; /* Set background color to black */
-  color: yellow; /* Set default text color */
+  background-color: black; 
+  color: yellow; 
 }
 
-/* Style the App component to fill the entire viewport */
+
 .App {
   height: 100%;
   display: flex;
@@ -56,17 +57,17 @@ html, body {
   align-items: center;
 }
 
-/* Style the App-header to fill the remaining space */
+
 .App-header {
   width: 100%;
-  flex-grow: 1; /* Make it take up available space */
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Align content to the top */
+  justify-content: flex-start; 
 }
 
-/* Style for the terminal output */
+
 .App-terminal-output {
   width: 110%;
   flex-grow: 1;
@@ -74,15 +75,14 @@ html, body {
   background-color: #020000;
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
-  word-wrap: break-word; /* This will break long words to prevent horizontal overflow */
+  word-wrap: break-word; 
 }
 
-/* Style for the terminal input */
 .App-terminal-input {
   width: 80%;
-  height: 50px; /* Fixed height for input */
-  background-color: #000000; /* Dark background for input */
-  color: yellow; /* Green text color */
+  height: 50px; 
+  background-color: #000000; 
+  color: yellow;
   border: none;
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
@@ -104,7 +104,6 @@ html, body {
   text-align: left;
 }
 
-/* ... [existing styles] ... */
 
 .top-right-links {
   position: absolute;
@@ -112,20 +111,13 @@ html, body {
   right: 0;
   margin: 10px;
   display: flex;
-  gap: 10px; /* Adjust the gap between the links as needed */
+  gap: 10px; 
 }
 
 .top-right-links a {
   color: yellow;
   cursor: pointer;
-  font-size: 35px; /* Match the font size of the .App-name */
-  font-weight: bold; /* Optional: to match the weight of the .App-name */
-  text-decoration: underline; /* Underline the text */
+  font-size: 35px; 
+  font-weight: bold; 
+  text-decoration: underline; 
 }
-
-/* ... [rest of your existing styles] ... */
-
-
-
-
-/* ... [rest of your existing styles] ... */
