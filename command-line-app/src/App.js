@@ -78,7 +78,7 @@ function App() {
           'SQL - Intermediate',
           'C++ - Intermediate'
         ];
-        setTerminalHistory(th => [...th, ...languages]); // Spread the array
+        setTerminalHistory(th => [...th, ...languages]); 
         break;
       case 'wiki-random':
         window.open('https://en.wikipedia.org/wiki/Special:Random', '_blank');
@@ -254,7 +254,7 @@ function App() {
               placeholder="Type your command here..."
               autoFocus
             />
-            <div ref={bottomRef} /> {/* Correctly closed comment */}
+            <div ref={bottomRef} /> {}
           </div>
         </div>
       </header>
